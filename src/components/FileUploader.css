@@ -1,0 +1,74 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    line-height: 1;
+    color: #454cad;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+span {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color: #5f6982;
+    padding-bottom: 15px;
+}
+
+.landing-page{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px 30px 30px;
+    border: #454cad solid 2px;
+    border-radius: 5px;
+    width: 60%;
+    height: auto;
+}
+
+.image-container{
+    width: 80%;
+    height: auto;
+
+}
+
+.upload-options{
+    display: flex;
+    gap: 10px;
+}
+
+/* input[type="file"] {
+    display: none;
+} */
+
+.upload-btn-input {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+::-webkit-file-upload-button {
+    border-radius: 5px;
+    padding: 5px;
+    border: #454cad solid 2px;
+  }
+
+.upload-btn{
+    border-radius: 3px;
+    width: 160px;
+    padding: 5px;
+    border: #454cad solid 2px;
+    cursor: pointer;
+}
