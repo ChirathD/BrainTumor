@@ -95,7 +95,15 @@ const FileUpload = () => {
           }).then(function (response) {
             setApiResponse(response.data.result)
             setConfidence(response.data.result.probability)
-            setTumorName(response.data.result.name)
+            response_array = response.data.result.name.split(" ");
+            if(response_array.length>2){
+               results  = response_array[1] + " " + "Stroke"     
+            }
+            else{
+               results  = response_array[1] + " " + "Brain"             
+            }
+            
+            setTumorName(response_array)
             // if(response.data.name === "brain_hemorrhagic"){
             //     setIsPython(true)
             //     setIsViper(false)
